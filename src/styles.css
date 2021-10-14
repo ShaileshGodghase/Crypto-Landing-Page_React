@@ -1,0 +1,915 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body{
+    background-color: #03103b;
+}
+.content{
+    max-width: 1250px;
+    margin: auto;
+    padding: 0 30px;
+}
+button{
+  border: none;
+}
+/* NAVIGATION BAR
+*****************************/
+.logo-icon{
+    width: 50px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    padding: 25px 0;
+    transition: all 0.3s ease;
+  }
+.sticky{
+    background: #F0A500;
+    padding: 15px 0 15px 0;
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+  }
+  .Navbar .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .Navbar .logo a{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .Navbar .menu-list{
+    display: inline-flex;
+  }
+  .menu-list li{
+    list-style: none;
+  }
+  .menu-list li a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  .menu-list li a:hover{
+    color: #3498db;
+    border-bottom: 2px solid #3498db;
+  }
+
+  .tff:hover{
+    color: white !important;
+  }
+  .icon{
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+  }
+  .menu-list .cancel-btn{
+    position: absolute;
+    right: 30px;
+    top: 20px;
+  }
+.try-for-free{
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.try-for-free:hover{
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+/********************** MAIN CONTENT SECTION *******************/
+.main-section{
+    color: white;
+    position: relative;
+    top: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+}
+.main-image img{
+    width: 90%;
+}
+.discount{
+    background-color: #1a1d5f;
+    padding: 15px 20px; 
+    border-radius: 40px;
+    width: 60%;
+}
+.discount h4{
+  font-size: 20px;
+  margin-bottom: 0;
+}
+.heading{
+  width: 65%;
+  margin: 20px 0;
+}
+.discount span{
+    color: #3fdbd8;
+    margin-right: 10px;
+}
+.main-text{
+  height: 440px;
+}
+.heading h1{
+  font-weight: 500;
+  font-size: 40px;
+}
+.heading p{
+  font-size: 18px;
+  margin: 30px 0 40px 0;
+  color: #496b96;
+}
+.white-paper{
+    margin-left: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: midnightblue;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+.white-paper:hover{
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+/***************** COUNTDOWN SECTION *************************/
+.countdown-section{
+  text-align: center;
+  margin-top: 300px;
+}
+
+.countdown-section h1{
+  color: white;
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 400;
+  margin-bottom: 27px;
+  margin-top: 60px;
+}
+.countdown{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin: 50px;
+}
+.countdown span{
+  font-size: 30px;
+  margin-top: -55px;
+  font-weight: 700;
+}
+.label{
+  display: flex;
+  flex-direction: column;
+}
+.label p{
+  color: #88bef5;
+  margin: 15px 0;
+}
+.countdown h4{
+  font-size: 60px;
+  font-weight: 300;
+}
+.countdown-format{
+  padding: 20px;
+  margin: 0 20px;
+  background-color: #0b1741;
+}
+.names{
+  display: flex;  
+  justify-content: space-between;
+  align-items: center;
+}
+.countdown-section button{
+  margin-bottom: 60px;
+}
+
+/************************* THE COIN SECTION **********************************/
+.the-coin-section{
+  text-align: center;
+  margin-top: 70px;
+  color: white;
+  margin-bottom: 100px;
+}
+.features{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.coin-heading h1{
+  font-size: 40px;
+  font-weight: 300;
+}
+.coin-heading p{
+  max-width: 420px;
+  color: rgb(72, 107, 150);
+  margin: 30px auto 60px auto;
+}
+.single-feature{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  margin-bottom: 30px;
+  padding: 30px 0;
+}
+.single-feature p{
+  font-size: 15px;
+  color: rgba(142, 199, 255, 0.5);
+  line-height: 1.6;
+  width: 90%;
+}
+.single-feature h3{
+  margin: 20px 0;
+  font-weight: 300;
+}
+.single-feature:hover{
+  background-color: rgba(0,0,0,0.1);
+}
+/************************** ACHIEVEMENTS SECTION **********************************/
+.achievement{
+  margin: 100px 0;
+}
+.achievement-content{
+  display: flex;
+  justify-content: space-between;
+}
+.all-cards{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-section-1{
+  margin: 0 30px;
+}
+.card-section-2{
+  margin: -100px 0 0 0;
+}
+.card{
+  background-color: rgb(21, 33, 73);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 10px;
+  min-width: 200px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease-in-out 0s;
+}
+.card img{
+  opacity: 0.2;
+  margin-bottom: 30px;
+}
+.card h1{
+  color: white;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+.card h3{
+    color: rgba(142, 199, 255, 0.5);
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 7px;
+}
+.card:hover{
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+.achivement-text-section{
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text-content{
+  width: 60%;
+}
+.text-content h1{
+  color: white;
+  font-weight: 300;
+  font-size: 48px;
+  margin:0 30px 20px 0;
+}
+.text-content p{
+  color: rgb(73, 107, 150);
+    font-size: 16px;
+    line-height: 33px;
+    font-weight: 400;
+    margin: 20px 0;
+}
+.text-content a{
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+.text-content i{
+  font-size: 15px;
+  margin-left: 10px;
+}
+  /********************** LAST YEAR SALE SECTION **********/
+  .last-year-sale{
+    margin: 100px 0;
+  }
+  .last-year-content{
+    display: flex;
+    justify-content: space-around;
+  }
+  .sale-text{
+    padding-top: 40px;
+  }
+  .sale-text h1{
+    font-size: 38px;
+    color: white;
+    line-height: 1.2;
+    font-weight: 300;
+    letter-spacing: -0.025em;
+    margin: 0 auto 27px auto;
+    max-width: 370px;
+  }
+  .sale-text p{
+    font-size: 16px;
+    line-height: 28px;
+    color: rgb(73, 107, 150);
+    max-width: 400px;
+  }
+  .sale-graph img{
+    padding-top: 45px;
+    width: 100%;
+    object-fit: cover;
+  }
+/*************************** FUND RAISING *************************************/
+.fund-raising{
+  margin: 100px 0;
+  padding: 50px 0;
+}
+.fund-content{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.fund-graph img{
+  object-fit: cover;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.fund-text{
+  text-align: center;
+}
+.fund-text h1{
+    color: white;
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: 300;
+    letter-spacing: -0.025em;
+    margin-bottom: 27px;
+}
+.fund-text p{
+    font-size: 16px;
+    line-height: 28px;
+    color: rgb(73, 107, 150);
+    max-width: 400px;
+}
+.fund-text img{
+  margin-top: 50px;
+  object-fit: cover;
+  width: 100%;
+}
+
+/************************ PRIVACY FUND *************************************/
+.privacy-fund{
+  margin: 100px 0;
+}
+.privacy-fund-content{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.privacy-fund-text h1{
+    color: white;
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: 300;
+    letter-spacing: -0.025em;
+    margin-bottom: 27px;
+    max-width: 385px;
+}
+.privacy-fund-text p{
+    font-size: 16px;
+    line-height: 28px;
+    color: rgb(73, 107, 150);
+    max-width: 400px;
+    margin: 20px 0;
+}
+.privacy-fund-image img{
+  width: 100%;
+  object-fit: cover;
+}
+/*********************** WALLET SECTION **********************************/
+.wallet-section{
+  margin: 100px 0;
+}
+.wallet-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.wallet-text-content{
+  padding: 20px 30px;
+  width: 50%;
+}
+.wallet-img img{
+    width: 100%;
+    height: 900px;
+    object-fit: contain;
+}
+.wallet-text h1{
+    color: rgb(255, 255, 255);
+    font-size: 38px;
+    line-height: 1.2;
+    font-weight: 300;
+    letter-spacing: -0.025em;
+    margin-bottom: 15px;
+}
+.wallet-text p{
+  font-size: 16px;
+    line-height: 28px;
+    color: rgb(73, 107, 150);
+    max-width: 400px;
+}
+.wallet-features{
+  margin: 30px 0px;
+}
+.w-feature{
+  display: flex;
+}
+.w-feature img{
+  height: 24px;
+}
+.w-feature h4{    
+  font-size: 16px;
+  line-height: 28px;
+  color: rgb(255, 255, 255);
+  padding-left: 24px;
+  max-width: 100%;
+  margin-bottom: 30px;
+  margin-top: -1px;
+  
+}
+.wallet-btn{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.w-btn{
+    display: flex;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin-right: 17px;
+    padding: 20px 35px;
+    font-size: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.w-btn img{
+  width: 18px;
+}
+.w-btn a{
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  margin-left: 20px;
+}
+/************************ FAQ SECTION ********************************/
+.Faq{
+  margin: 100px 0;
+}
+.faq-heading{
+  text-align: center;
+  margin-bottom: 50px;
+}
+.faq-heading h1{
+    display: block;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 15px;
+    margin-top: 0px;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: -0.025em;
+}
+.faq-heading p{
+    font-size: 16px;
+    color: rgb(73, 107, 150);
+    max-width: 420px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0 auto;
+  }
+  .accordian{
+    width: 60%;
+    margin: 0 auto;
+  }
+/***************************NEWS LETTER ********************************/
+.newsLetter{
+  margin: 100px 0;
+}
+.bg-blue{
+  border-radius: 8px;
+  padding: 50px 60px;
+  background-color: #0c2973;
+}
+.newsletter-content{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.newsletter-text{
+  width: 35%;
+}
+.newsletter-text h3,p{
+  color: white;
+}
+.form__field {
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid white;
+  outline: 0;
+  font-size: 1.3rem;
+  color: white;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+.form__field:focus {
+  padding-bottom: 6px;  
+  font-weight: 400;
+  border-width: 3px;
+  border-image: linear-gradient(to left, white,black);
+  border-image-slice: 1;
+}
+.get-access a{
+  background-color: rgb(255, 255, 255);
+    color: rgb(3, 16, 59);
+    font-size: 14px;
+    letter-spacing: -0.1px;
+    border-radius: 5px;
+    padding: 18px 23px;
+    font-weight: 500;
+    text-decoration: none;
+}
+.get-access a:hover{
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+  color: white;
+}
+/***************************** FOOTER ***************************/
+.footer{
+  margin: 100px 0 0 0;
+}
+.footer h4{
+  color: white;
+  font-size: 16px;
+  margin-bottom: 30px;
+  margin-top: 0px;
+  font-weight: 700;
+}
+.footer a{
+    color: rgb(142, 199, 255);
+    font-size: 14px;
+    line-height: 36px;
+    transition: all 0.2s ease 0s;
+    font-weight: 300;
+}
+.company-info{
+  margin-right: 40px;
+}
+.company-info img{
+  width: 50px;
+  margin: 10px;
+}
+.company-info p{
+  color: rgb(142, 199, 255);
+  font-size: 14px;
+  font-weight: 300;
+}
+.company-info span{
+  color: white;
+}
+.footer-content{
+  display: flex;
+}
+.footer-section{
+  width: 230px;
+  padding: 0 20px;
+}
+.sub-section p a{
+  text-decoration: none;
+}
+.sub-section p a:hover{
+  color: white;
+}
+.sub-section p{
+  margin: 0;
+}
+/*************************** CREDITS ***************************/
+.credits{
+  margin: 20px 0;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+.credits h5{
+  font-size: 15px;
+  font-weight: 300;
+}
+.credits h5 a{
+  color: #3cb0fd;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  font-size: 20px;
+}
+.credits h5 a:hover{
+  cursor: pointer;
+  border: 1px solid #3cb0fd;
+  text-decoration: none;
+  padding: 15px 18px;
+  transition: all 0.3s;
+}
+  /*********************** MEDIA  QUERIES *******************************************/
+  
+  @media (max-width: 1230px) {
+    .content{
+      padding: 0 60px;
+    }
+  }
+  @media (max-width: 1100px) {
+    .content{
+      padding: 0 40px;
+    }
+  }
+  @media (max-width: 900px) {
+    .content{
+      padding: 0 30px;
+    }
+    .newsletter-content{
+      padding: 30px 0;
+    }
+  }
+  @media (max-width: 868px) {
+
+    /******************** NAVIGATION BAR ******************/
+    body.disabled{
+      overflow: hidden;
+    }
+    .icon{
+      display: block;
+    }
+    .icon.hide{
+      display: none;
+    }
+    .Navbar .menu-list{
+      position: fixed;
+      height: 100vh;
+      width: 100%;
+      max-width: 400px;
+      left: -100%;
+      top: 0px;
+      display: block;
+      padding: 40px 0;
+      text-align: center;
+      background: url('./Images/pattern.png');
+      background-color: #03103b;
+      transition: all 0.3s ease;
+    }
+    .Navbar.show .menu-list{
+      left: 0%;
+    }
+    .Navbar .menu-list li{
+      margin-top: 45px;
+    }
+    .Navbar .menu-list li a{
+      font-size: 23px;
+      margin-left: -100%;
+      transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    .Navbar.show .menu-list li a{
+      margin-left: 0px;
+    }
+    /************************* MAIN SECTION *******************/
+    .main-section{
+      flex-direction: column;
+    }
+    .main-image{
+      display: none;
+    }
+    .heading h1{
+      font-size: 25px;
+    }
+    .heading,.discount{
+      width: 100%;
+    }
+    .buttons{
+      display: flex;
+      flex-direction: column;
+    }
+    .white-paper{
+      margin: 10px 0;
+    }
+
+    /***************** COUNTDOWN SECTION *************************/
+    .countdown-section h1{
+      font-size: 26px;
+    }
+    .countdown h4{
+      font-size: 25px;
+    }
+    .countdown-format{
+      margin: 0 10px;
+      padding: 10px;
+    }
+
+    /************************* THE COIN SECTION **********************************/
+    .features{
+      flex-direction: column;
+    }
+    /************************** ACHIEVEMENTS SECTION **********************************/
+    .achievement-content{
+      flex-direction: column;
+    }
+    .achivement-text-section{
+      padding: 0;
+    }
+    .text-content{
+      margin: 10px 0 0 0;
+      width: 100%;
+    }
+    .card{
+      min-width: 145px;
+      padding: 40px 0;
+    }
+    .card-section-1{
+      margin-left: 10px;
+    }
+    /********************** LAST YEAR SALE SECTION **********/
+    .last-year-sale{
+      margin: -45px 0 50px 0;
+      text-align: center;
+    }
+    .last-year-content{
+      flex-direction: column;
+    }
+    .sale-text h1{
+      font-size: 24px;
+    }
+    .sale-text p{
+      font-size: 13px;
+    }
+    /*************************** FUND RAISING *************************************/
+    .fund-content{
+      flex-direction: column;
+    }
+    .fund-text h1{
+      font-size: 30px;
+    }
+    /************************ PRIVACY FUND *************************************/
+    .privacy-fund-content{
+      flex-direction: column;
+      text-align: center;
+    }
+    .privacy-fund-text h1{
+      font-size: 30px;
+    }
+    /*********************** WALLET SECTION **********************************/
+    .wallet-content, .wallet-btn{
+      flex-direction: column;
+    }
+    .wallet-img{
+      display: none;
+    }
+    .wallet-text-content{
+      width: 100%;
+      padding: 0;
+    }
+    .w-btn{
+      width: 100%;
+      margin: 0 0 20px 0;
+    }
+    /************************ FAQ SECTION ********************************/
+    .faq-heading h1{
+      font-size: 35px;
+    }
+    .accordian{
+      width: 100%;
+    }
+    /***************************NEWS LETTER ********************************/
+    .newsletter-content{
+      flex-direction: column;
+      text-align: center;
+      height: 350px;
+    }
+    .newsletter-text{
+      width: 100%;
+    }
+    .bg-blue{
+      margin: auto 15px;
+    }
+    .input-area, .get-access a{
+      width: 100%;
+    }
+    /***************************** FOOTER ***************************/
+    .footer-content{
+      flex-direction: column;
+    }
+    .footer-section{
+      width: 100%;
+      margin: 20px 0 5px 0;
+    }
+    .footer h4{
+      margin-bottom: 20px;
+    }
+    .company-info{
+      padding: 0 20px;
+    }
+    /********************* CREDITS ***************************/
+    .credits h5 a{
+      display: block;
+      margin: 10px;
+    }
+    .credits h5 a:hover{
+      padding: 5px 8px;
+      transition: all 0.3s;
+    }
+  }
+ 
+@media (max-width: 380px) {
+    
+    /******************** NAVIGATION BAR ******************/
+    .Navbar .logo a{
+      font-size: 27px;
+    }
+    /************************** ACHIEVEMENTS SECTION **********************************/
+    .card-section-1{
+      margin: 10px 10px 10px 0;
+    }
+    .text-content h1{
+      font-size: 40px;
+      margin: 0px 0px 20px 0;
+    }
+}
