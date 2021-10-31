@@ -44,12 +44,12 @@ class Navbar extends Component {
                             <div className="icon cancel-btn" onClick={this.menuCloseHandler}>
                                 <i className="fas fa-times"></i>
                             </div>
-                            <li><a href="/">Home</a></li>
-                            <li><a href="#keyFeatures">Key Features</a></li>
-                            <li><a href="#fundRaising">Fund Raising</a></li>
-                            <li><a href="#achievements">Achievements</a></li>
-                            <li><a href="#faq">FAQ</a></li>
-                            <li><a href="/" className="try-for-free tff">Try For Free</a></li>
+                            <li><a onClick={this.menuCloseHandler}href="/">Home</a></li>
+                            <li><a onClick={this.menuCloseHandler}href="#keyFeatures">Key Features</a></li>
+                            <li><a onClick={this.menuCloseHandler}href="#fundRaising">Fund Raising</a></li>
+                            <li><a onClick={this.menuCloseHandler}href="#achievements">Achievements</a></li>
+                            <li><a onClick={this.menuCloseHandler}href="#faq">FAQ</a></li>
+                            <li><a onClick={this.menuCloseHandler}href="/" className="try-for-free tff">Try For Free</a></li>
                         </ul>
                         <div className={menuState ? "icon menu-btn hide":"icon menu-btn"} onClick={this.menuClickHandler}>
                             <i className="fas fa-bars"></i>

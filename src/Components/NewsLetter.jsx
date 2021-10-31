@@ -11,7 +11,7 @@ function NewsLetter() {
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiusmod tempor incididunt labore dolore</p>
                     </div>
                     <div className="input-area">
-                        <input type="input" className="form__field" autocomplete="off" placeholder="Email Address" name="email" id='email' required />
+                        <input type="input" className="form__field" placeholder="Email Address" name="email" id='email' required />
                     </div>
                     <div className="get-access">
                         <a href="/">GET ACCESS</a>

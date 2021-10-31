@@ -7,9 +7,9 @@ const SubSection = (props)=>{
             <h4>{props.item.title}</h4>
                 <div className="sub-section">
                     {
-                        props.item.content.map((it)=>{
+                        props.item.content.map((it,index)=>{
                             return(
-                                <p><a href="/">{it}</a></p>
+                                <p key={index}><a href="/">{it}</a></p>
                             )
                         })
                     }
@@ -61,7 +61,7 @@ function Footer() {
                     </div>
                     {
                     Section.map((it,index)=> {
-                        return <SubSection item={it} />
+                        return <SubSection item={it} key={index} />
                     })}
                 </div>
             </div>
