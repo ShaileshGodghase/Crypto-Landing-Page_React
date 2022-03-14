@@ -21,7 +21,7 @@ const Credits = () =>{
     return (
         <section className="credits">
             <div className="content">
-                <h5>Developed By <a href="https://www.linkedin.com/in/shailesh-godghase-b4392220a/" target="_blank" rel="noreferrer">Shailesh Godghase</a> | <i className="fal fa-copyright"></i> 2021 All rights reserved.</h5>
+                <h5>Developed By <a href="https://404-sg.netlify.app/" target="_blank" rel="noreferrer">Shailesh Godghase</a> | <i className="fal fa-copyright"></i> 2021 All rights reserved.</h5>
             </div>
         </section>
     )
