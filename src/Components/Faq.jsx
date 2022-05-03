@@ -5,7 +5,7 @@ function Faq() {
     const Questions = [
         {
             question: "How to contact with Customer Service?",
-            answer : "Our Customer Experience Team is available 7 days a week and we offer 2 ways to get in contact.Email and Chat . We try to reply quickly, so you need not to wait too long for a response!."
+            answer: "Our Customer Experience Team is available 7 days a week and we offer 2 ways to get in contact.Email and Chat . We try to reply quickly, so you need not to wait too long for a response!."
         },
         {
             question: "App installation failed, how to update system information?",
@@ -23,7 +23,7 @@ function Faq() {
     return (
         <section className="Faq" id="faq">
             <div className="content">
-                <div className="faq-heading">
+                <div className="faq-heading" data-aos="fade-up">
                     <h1>Have Any Question ?</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiu Lorem ipsum dolor Lorem ipsum dolor</p>
                 </div>

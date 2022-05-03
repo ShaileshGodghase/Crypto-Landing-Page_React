@@ -12,8 +12,15 @@ import WalletSection from './Components/WalletSection';
 import Faq from './Components/Faq';
 import NewsLetter from './Components/NewsLetter';
 import Footer from './Components/Footer';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 class App extends Component {
+
+  componentDidMount(){
+    AOS.init();
+    AOS.refresh();
+  }
   render() {
     return (
      <>
